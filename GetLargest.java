@@ -4,9 +4,8 @@ public class GetLargest {
         int res = 0;
         int i;
         for(i=1; i<arr.length; i++){
-            if (arr[res] < arr[i]) {
-                res=i;
-                
+            if (arr[i] > arr[res]) {
+                res=i;                
             }   
         }
         return res;
